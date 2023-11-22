@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+grep "chat.openai.com" /etc/hosts > /dev/null || echo -e "127.0.0.1\tchat.openai.com" | sudo tee -a /etc/hosts > /dev/null
